@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "com.personal.services.core": "file:../Submodules/Services/Assets/Core",
+    "com.personal.services.ui": "file:../Submodules/Services/Assets/UIService",
     "com.unity.collab-proxy": "1.17.2",
     "com.unity.feature.development": "1.0.1",
     "com.unity.ide.rider": "3.0.15",

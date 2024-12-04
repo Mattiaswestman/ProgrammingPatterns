@@ -1,5 +1,17 @@
 {
   "dependencies": {
+    "com.personal.services.core": {
+      "version": "file:../Submodules/Services/Assets/Core",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
+    "com.personal.services.ui": {
+      "version": "file:../Submodules/Services/Assets/UIService",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.unity.collab-proxy": {
       "version": "1.17.2",
       "depth": 0,
