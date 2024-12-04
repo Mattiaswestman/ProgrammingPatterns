@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Personal.Patterns
 {
-    public class DemoController : MonoBehaviour
+    public class SingletonDemoController : MonoBehaviour
     {
         private void Update()
         {
