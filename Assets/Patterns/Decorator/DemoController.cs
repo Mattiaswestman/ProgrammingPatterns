@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Personal.Patterns.Decorator
@@ -7,28 +5,28 @@ namespace Personal.Patterns.Decorator
     public class DemoController : MonoBehaviour
     {
         [SerializeField]
-        private bool _useTomatoDecorator;
+        private bool _useDecoratorA;
         [SerializeField]
-        private bool _useCheeseDecorator;
+        private bool _useDecoratorB;
         [SerializeField]
-        private bool _useHamDecorator;
+        private bool _useDecoratorC;
 
-        private IPizza _pizza;
+        private IBaseInterface _baseInterface;
 
         private void Awake()
         {
-            _pizza = new Pizza();
-            if(_useTomatoDecorator)
+            _baseInterface = new BaseComponent();
+            if(_useDecoratorA)
             {
-                _pizza = new DecoratorTomato(_pizza);
+                _baseInterface = new DecoratorA(_baseInterface);
             }
-            if(_useCheeseDecorator)
+            if(_useDecoratorB)
             {
-                _pizza = new DecoratorCheese(_pizza);
+                _baseInterface = new DecoratorB(_baseInterface);
             }
-            if(_useHamDecorator)
+            if(_useDecoratorC)
             {
-                _pizza = new DecoratorHam(_pizza);
+                _baseInterface = new DecoratorC(_baseInterface);
             }
         }
 
@@ -41,7 +39,7 @@ namespace Personal.Patterns.Decorator
         {
             if(Input.GetKeyDown(KeyCode.Space))
             {
-                Debug.Log(_pizza.GetPizzaType());
+                Debug.Log(_baseInterface.GetText());
             }
         }
     }

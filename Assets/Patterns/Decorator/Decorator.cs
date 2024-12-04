@@ -2,18 +2,18 @@ using UnityEngine;
 
 namespace Personal.Patterns.Decorator
 {
-    public class Decorator : IPizza
+    public class Decorator : IBaseInterface
     {
-        private IPizza _pizza;
+        private IBaseInterface _baseInterface;
 
-        public Decorator(IPizza pizza)
+        public Decorator(IBaseInterface baseInterface)
         {
-            _pizza = pizza;
+            _baseInterface = baseInterface;
         }
 
-        public virtual string GetPizzaType()
+        public virtual string GetText()
         {
-            return _pizza.GetPizzaType();
+            return _baseInterface.GetText();
         }
     }
 }

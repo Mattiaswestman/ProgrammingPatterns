@@ -2,8 +2,8 @@ using UnityEngine;
 
 namespace Personal.Patterns.Decorator
 {
-    public interface IPizza
+    public interface IBaseInterface
     {
-        public string GetPizzaType();
+        public string GetText();
     }
 }
