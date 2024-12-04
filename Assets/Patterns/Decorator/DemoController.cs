@@ -6,15 +6,30 @@ namespace Personal.Patterns.Decorator
 {
     public class DemoController : MonoBehaviour
     {
-        private SmsNotifier _smsNotifier;
-        private FacebookNotifier _facebookNotifier;
-        private SlackNotifier _slackNotifier;
+        [SerializeField]
+        private bool _useTomatoDecorator;
+        [SerializeField]
+        private bool _useCheeseDecorator;
+        [SerializeField]
+        private bool _useHamDecorator;
+
+        private IPizza _pizza;
 
         private void Awake()
         {
-            _smsNotifier = new SmsNotifier();
-            _facebookNotifier = new FacebookNotifier();
-            _slackNotifier = new SlackNotifier();
+            _pizza = new Pizza();
+            if(_useTomatoDecorator)
+            {
+                _pizza = new DecoratorTomato(_pizza);
+            }
+            if(_useCheeseDecorator)
+            {
+                _pizza = new DecoratorCheese(_pizza);
+            }
+            if(_useHamDecorator)
+            {
+                _pizza = new DecoratorHam(_pizza);
+            }
         }
 
         private void Update()
@@ -26,7 +41,7 @@ namespace Personal.Patterns.Decorator
         {
             if(Input.GetKeyDown(KeyCode.Space))
             {
-                _smsNotifier.SendMessage();
+                Debug.Log(_pizza.GetPizzaType());
             }
         }
     }
