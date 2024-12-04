@@ -1,11 +1,6 @@
 using UnityEngine;
 
-/// <summary>
-/// Singleton is a creational design pattern that lets you ensure that a class has only one instance, 
-/// while providing a global access point to this instance.
-/// </summary>
-
-namespace Personal.Patterns
+namespace Personal.Patterns.Singleton
 {
     public class Singleton<T> : MonoBehaviour where T : Component
     {

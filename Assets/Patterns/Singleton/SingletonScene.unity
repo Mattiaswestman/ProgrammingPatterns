@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 723658599}
   - component: {fileID: 723658598}
   m_Layer: 0
-  m_Name: SingletonDemoController
+  m_Name: DemoController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

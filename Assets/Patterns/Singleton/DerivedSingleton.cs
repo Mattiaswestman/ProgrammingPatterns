@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Personal.Patterns
+namespace Personal.Patterns.Singleton
 {
     public class DerivedSingleton : Singleton<DerivedSingleton>
     {

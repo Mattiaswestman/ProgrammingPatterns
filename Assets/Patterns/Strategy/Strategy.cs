@@ -1,18 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Strategy : MonoBehaviour
+namespace Personal.Patterns.Strategy
 {
-    // Start is called before the first frame update
-    void Start()
+    public class Strategy : MonoBehaviour
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

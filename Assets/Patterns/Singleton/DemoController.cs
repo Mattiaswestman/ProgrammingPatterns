@@ -1,8 +1,8 @@
 using UnityEngine;
 
-namespace Personal.Patterns
+namespace Personal.Patterns.Singleton
 {
-    public class SingletonDemoController : MonoBehaviour
+    public class DemoController : MonoBehaviour
     {
         private void Update()
         {
