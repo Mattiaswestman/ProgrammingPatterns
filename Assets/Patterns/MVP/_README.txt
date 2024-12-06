@@ -1,0 +1,1 @@
+The Model View Presenter is an architectural pattern. Like the other design patterns in the Model View Controller family, it applies separation of concerns for parts of our application.
