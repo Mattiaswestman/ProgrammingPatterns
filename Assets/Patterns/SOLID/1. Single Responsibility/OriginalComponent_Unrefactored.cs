@@ -1,22 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace DesignPatterns.SRP
+namespace Personal.Patterns.SOLID
 {
     // Even though this class is short, it violates single-responsibility.
     // Too many things will cause the class to update, and extending the class will be more difficult.
-
-    public class UnrefactoredPlayer : MonoBehaviour
+    public class OriginalComponent_Unrefactored : MonoBehaviour
     {
-
-        [SerializeField] private string _inputAxisName;
-
-        [SerializeField] private float _positionMultiplier;
-
-        private float _yPosition;
+        [SerializeField] 
+        private string _inputAxisName;
+        [SerializeField] 
+        private float _positionMultiplier;
 
         private AudioSource _bounceSfx;
+        private float _yPosition;
 
         private void Start()
         {
@@ -26,9 +22,7 @@ namespace DesignPatterns.SRP
         private void Update()
         {
             float delta = Input.GetAxis(_inputAxisName) * Time.deltaTime;
-
             _yPosition = Mathf.Clamp(_yPosition + delta, -1, 1);
-
             transform.position = new Vector3(transform.position.x, _yPosition * _positionMultiplier, transform.position.z);
         }
 
