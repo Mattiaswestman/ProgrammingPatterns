@@ -1,32 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-namespace DesignPatterns.LSP
+namespace Personal.Patterns.SOLID
 {
     public class RailVehicle : IMovable
     {
+        public float MoveSpeed { get; set; } = 100f;
+        public float Acceleration { get; set; } = 5f;
+        public float TurnSpeed { get; set; } = 5f;
+        public string Name { get; set; }
 
-        public string Name;
-
-        private float moveSpeed = 100f;
-        private float acceleration = 5f;
-
-        public float TurnSpeed = 5f;
-
-        public float MoveSpeed { get => moveSpeed; set => moveSpeed = value; }
-        public float Acceleration { get => acceleration; set => acceleration = value; }
-
-
-        // implement these differently than RoadVehicles
         public virtual void GoForward()
         {
-            
         }
 
         public virtual void Reverse()
         {
-           
         }
     }
 }

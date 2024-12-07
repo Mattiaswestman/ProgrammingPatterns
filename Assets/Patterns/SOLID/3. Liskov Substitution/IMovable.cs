@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-namespace DesignPatterns.LSP
+namespace Personal.Patterns.SOLID
 {
     public interface IMovable
     {
