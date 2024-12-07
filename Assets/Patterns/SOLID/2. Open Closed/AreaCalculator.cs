@@ -1,28 +1,13 @@
-using UnityEngine;
 
-namespace DesignPatterns.OCP
-{ 
+namespace Personal.Patterns.SOLID
+{
+    // New implementation using open-closed principle.
+    // Let each Shape contain the logic for calculating the area.
     public class AreaCalculator 
     {
-        // old implemenation: not using open-closed principle
-
-        //public float GetRectangleArea(Rectangle rectangle)
-        //{
-        //    return rectangle.Width * rectangle.Height;
-        //}
-
-        //public float GetCircleArea(Circle circle)
-        //{
-        //    return circle.Radius * circle.Radius * Mathf.PI;
-        //}
-
-
-        // new implementation: use open-closed principle
-        // let each Shape contain the logic for calculating the area
-
         public float GetArea(Shape shape)
         {
-            return shape.CalculateArea();
+            return shape.GetArea();
         }
     }
 }  

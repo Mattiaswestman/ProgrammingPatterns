@@ -1,8 +1,8 @@
 
-namespace DesignPatterns.OCP
+namespace Personal.Patterns.SOLID
 {
     public abstract class Shape
     {
-        public abstract float CalculateArea();
+        public abstract float GetArea();
     }
 }
