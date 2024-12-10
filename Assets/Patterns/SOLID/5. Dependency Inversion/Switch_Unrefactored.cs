@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Personal.Patterns.SOLID.DependencyInjection
+namespace Personal.Patterns.SOLID.DependencyInversion
 {
     public class Switch_Unrefactored : MonoBehaviour
     {

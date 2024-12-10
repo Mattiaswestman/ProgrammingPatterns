@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Personal.Patterns.SOLID.DependencyInjection
+namespace Personal.Patterns.SOLID.DependencyInversion
 {
     // New implementation with ISwitchable client.
     public class Switch : MonoBehaviour

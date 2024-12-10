@@ -1,5 +1,5 @@
 
-namespace Personal.Patterns.SOLID.DependencyInjection
+namespace Personal.Patterns.SOLID.DependencyInversion
 {
     public interface ISwitchable 
     {

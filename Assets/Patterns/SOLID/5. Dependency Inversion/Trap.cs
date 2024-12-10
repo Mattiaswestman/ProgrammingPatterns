@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Personal.Patterns.SOLID.DependencyInjection
+namespace Personal.Patterns.SOLID.DependencyInversion
 {
     // Revised implementation with ISwitchable.
     public class Trap : MonoBehaviour, ISwitchable
