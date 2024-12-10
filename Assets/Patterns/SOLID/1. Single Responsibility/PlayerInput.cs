@@ -1,8 +1,8 @@
 using UnityEngine;
 
-namespace Personal.Patterns.SOLID
+namespace Personal.Patterns.SOLID.SingleResponsibility
 {
-    public class InputComponent : MonoBehaviour
+    public class PlayerInput : MonoBehaviour
     {
         [SerializeField]
         private string _inputAxisName;

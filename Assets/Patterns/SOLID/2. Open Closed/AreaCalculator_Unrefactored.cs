@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Personal.Patterns.SOLID
+namespace Personal.Patterns.SOLID.OpenClosed
 {
     // Old implemenation not using open-closed principle.
     public class AreaCalculator_Unrefactored

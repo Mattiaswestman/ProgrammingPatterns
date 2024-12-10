@@ -1,10 +1,10 @@
 using UnityEngine;
 
-namespace Personal.Patterns.SOLID
+namespace Personal.Patterns.SOLID.SingleResponsibility
 {
     // Even though this class is short, it violates single-responsibility.
     // Too many things will cause the class to update, and extending the class will be more difficult.
-    public class OriginalComponent_Unrefactored : MonoBehaviour
+    public class Player_Unrefactored : MonoBehaviour
     {
         [SerializeField] 
         private string _inputAxisName;

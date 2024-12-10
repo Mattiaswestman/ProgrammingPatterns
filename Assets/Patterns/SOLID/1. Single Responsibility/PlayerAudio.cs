@@ -1,8 +1,8 @@
 using UnityEngine;
 
-namespace Personal.Patterns.SOLID
+namespace Personal.Patterns.SOLID.SingleResponsibility
 {
-    public class AudioComponent : MonoBehaviour
+    public class PlayerAudio : MonoBehaviour
     {
         private AudioSource _bounceSfx;
 

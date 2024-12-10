@@ -1,10 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-namespace DesignPatterns.ISP
+namespace Personal.Patterns.SOLID.InterfaceSegregation
 {
-    // Here we have segregated part of the original interface into IExplodable.
     public interface IExplodable
     {
         public float Mass { get; set; }

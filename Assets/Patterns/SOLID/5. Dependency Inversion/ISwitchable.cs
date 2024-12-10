@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-namespace DesignPatterns.DIP
+namespace Personal.Patterns.SOLID.DependencyInjection
 {
     public interface ISwitchable 
     {

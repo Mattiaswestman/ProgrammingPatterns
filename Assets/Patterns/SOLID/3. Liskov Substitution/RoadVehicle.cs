@@ -1,5 +1,5 @@
 
-namespace Personal.Patterns.SOLID
+namespace Personal.Patterns.SOLID.LiskovSubstitution
 {
     public class RoadVehicle : IMovable, ITurnable
     {

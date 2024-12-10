@@ -1,5 +1,5 @@
 
-namespace Personal.Patterns.SOLID
+namespace Personal.Patterns.SOLID.LiskovSubstitution
 {
     // Don't include this in a base class, use composition instead of inheritance.
     // We put the functionality instead into the ITurnable and IMovable interfaces.

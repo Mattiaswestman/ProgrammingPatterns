@@ -1,5 +1,5 @@
 
-namespace Personal.Patterns.SOLID
+namespace Personal.Patterns.SOLID.OpenClosed
 {
     public class Rectangle : Shape
     {

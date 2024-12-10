@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Personal.Patterns.SOLID
+namespace Personal.Patterns.SOLID.OpenClosed
 {
     public class Circle : Shape
     {

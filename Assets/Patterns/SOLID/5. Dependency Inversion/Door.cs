@@ -1,41 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace DesignPatterns.DIP
+namespace Personal.Patterns.SOLID.DependencyInjection
 {
-    // old implementation
-
-    //public class Door : MonoBehaviour
-    //{
-    //    public void Open()
-    //    {
-    //        Debug.Log("The door is open.");
-    //    }
-
-    //    public void Close()
-    //    {
-    //        Debug.Log("The door is closed.");
-    //    }
-    //}
-
-
-    // revised implementation with ISwitchable
-
+    // Revised implementation with ISwitchable.
     public class Door : MonoBehaviour, ISwitchable
     {
-        private bool isActive;
-        public bool IsActive => isActive;
+        public bool IsActive { get; private set; }
 
         public void Activate()
         {
-            isActive = true;
+            IsActive = true;
             Debug.Log("The door is open.");
         }
 
         public void Deactivate()
         {
-            isActive = false;
+            IsActive = false;
             Debug.Log("The door is closed.");
         }
     }

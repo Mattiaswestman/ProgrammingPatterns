@@ -1,8 +1,8 @@
 using UnityEngine;
 
-namespace Personal.Patterns.SOLID
+namespace Personal.Patterns.SOLID.SingleResponsibility
 {
-    public class MovementComponent : MonoBehaviour
+    public class PlayerMovement : MonoBehaviour
     {
         [SerializeField]
         private float _positionMultiplier;

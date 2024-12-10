@@ -1,5 +1,5 @@
 
-namespace Personal.Patterns.SOLID
+namespace Personal.Patterns.SOLID.LiskovSubstitution
 {
     // Imagine a turn-based game where you move the Vehicle along a prescribed path: forward, left, right.
 

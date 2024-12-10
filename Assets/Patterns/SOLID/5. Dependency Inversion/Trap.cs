@@ -1,23 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace DesignPatterns.DIP
+namespace Personal.Patterns.SOLID.DependencyInjection
 {
+    // Revised implementation with ISwitchable.
     public class Trap : MonoBehaviour, ISwitchable
     {
-        private bool isActive;
-        public bool IsActive => isActive;
+        public bool IsActive { get; private set; }
 
         public void Activate()
         {
-            isActive = true;
+            IsActive = true;
             Debug.Log("The trap is active.");
         }
 
         public void Deactivate()
         {
-            isActive = false;
+            IsActive = false;
             Debug.Log("The trap is inactive.");
         }
     }
