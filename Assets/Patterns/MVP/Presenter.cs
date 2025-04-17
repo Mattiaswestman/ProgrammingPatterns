@@ -15,7 +15,7 @@ namespace Personal.Patterns.MVP
         {
             if(_model != null)
             {
-                _model.ValueChanged += OnValueChanged;
+                _model.OnValueChanged += OnValueChanged;
             }
         }
 
@@ -23,7 +23,7 @@ namespace Personal.Patterns.MVP
         {
             if(_model != null)
             {
-                _model.ValueChanged -= OnValueChanged;
+                _model.OnValueChanged -= OnValueChanged;
             }
         }
 
