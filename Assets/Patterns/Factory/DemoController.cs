@@ -4,40 +4,28 @@ namespace Personal.Patterns.Factory
 {
     public class DemoController : MonoBehaviour
     {
-        public enum ProductType { A, B }
-
-        [SerializeField]
-        private ProductType _productType;
-
         private Factory _factory;
 
         private void Awake()
         {
-            switch(_productType)
-            {
-                case ProductType.A:
-                {
-                    _factory = new ConcreteFactoryA();
-                    break;
-                }   
-                case ProductType.B:
-                {
-                    _factory = new ConcreteFactoryB();
-                    break;
-                }
-                default:
-                {
-                    _factory = new ConcreteFactoryA();
-                    break;
-                }
-            }
+            _factory = new ConcreteFactoryA();
 
-            Debug.Log("Created factory. Press 'Return' to create product.");
+            Debug.Log("Press '1' to set concrete factory A.");
+            Debug.Log("Press '2' to set concrete factory B.");
+            Debug.Log("Press '3' to create product.");
         }
 
         private void Update()
         {
-            if(Input.GetKeyDown(KeyCode.Return))
+            if(Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                _factory = new ConcreteFactoryA();
+            }
+            else if(Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                _factory = new ConcreteFactoryB();
+            }
+            else if(Input.GetKeyDown(KeyCode.Alpha3))
             {
                 IProduct product = _factory.GetProduct();
                 product.PrintLog();
