@@ -4,16 +4,16 @@ namespace Personal.Patterns.Facade
 {
     public class Facade : IFacade
     {
-        private readonly ThirdPartyCode _thirdPartyCode;
+        private readonly Service _service;
 
-        public Facade(ThirdPartyCode thirdPartyCode)
+        public Facade(Service service)
         {
-            _thirdPartyCode = thirdPartyCode;
+            _service = service;
         }
 
         public void MethodA()
         {
-            _thirdPartyCode.MethodA();
+            _service.MethodA();
         }
     }
 }

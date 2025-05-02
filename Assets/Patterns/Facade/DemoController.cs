@@ -5,18 +5,23 @@ namespace Personal.Patterns.Facade
     public class DemoController : MonoBehaviour
     {
         [SerializeField]
-        private ThirdPartyCode _thirdPartyCode;
+        private Service _service;
 
         private IFacade _facade;
 
         private void Awake()
         {
-            _facade = new Facade(_thirdPartyCode);
+            _facade = new Facade(_service);
+
+            Debug.Log("Press 'Return' to call method A through the facade.");
         }
 
-        private void Start()
+        private void Update()
         {
-            _facade.MethodA();
+            if(Input.GetKeyDown(KeyCode.Return))
+            {
+                _facade.MethodA();
+            }
         }
     }
 }

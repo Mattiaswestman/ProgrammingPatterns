@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 1641152653}
   - component: {fileID: 1641152654}
   m_Layer: 0
-  m_Name: ThirdPartyCode
+  m_Name: Service
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1641152651}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a704beed811cabc48b5b276353934e0d, type: 3}
+  m_Script: {fileID: 11500000, guid: e368b77136fc7a54d8933580ba2cc357, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _fahrenheit: 50
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e565221ba3119f541bc1074a51e7bd00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _thirdPartyCode: {fileID: 1641152654}
+  _service: {fileID: 1641152654}
   _celsius: 10
 --- !u!1001 &2077807522
 PrefabInstance:

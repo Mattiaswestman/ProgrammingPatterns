@@ -3,22 +3,22 @@ namespace Personal.Patterns.Adapter
 {
     public class Adapter : IAdapter
     {
-        private ThirdPartyCode _thirdPartyCode;
+        private readonly Service _service;
 
-        public Adapter(ThirdPartyCode thirdPartyCode)
+        public Adapter(Service service)
         {
-            _thirdPartyCode = thirdPartyCode;
+            _service = service;
         }
 
         public float GetCelsius()
         {
-            return (_thirdPartyCode.GetFahrenheit() - 32) * 5 / 9;
+            return (_service.GetFahrenheit() - 32) * 5 / 9;
         }
 
         public void SetCelsius(float value)
         {
             float fahrenheit = (value * 9 / 5) + 32;
-            _thirdPartyCode.SetFahrenheit(fahrenheit);
+            _service.SetFahrenheit(fahrenheit);
         }
     }
 }

@@ -5,7 +5,7 @@ namespace Personal.Patterns.Adapter
     public class DemoController : MonoBehaviour
     {
         [SerializeField]
-        private ThirdPartyCode _thirdPartyCode;
+        private Service _service;
         [SerializeField]
         private float _celsius;
 
@@ -14,11 +14,11 @@ namespace Personal.Patterns.Adapter
         private void Awake()
         {
             _celsius = 10f;
-            _adapter = new Adapter(_thirdPartyCode);
+            _adapter = new Adapter(_service);
             _adapter.SetCelsius(_celsius);
 
             Debug.Log("Press '1' to adapt celsius value in DemoController to fahrenheit.");
-            Debug.Log("Press '2' to adapt fahrenheit value in ThirdPartyController to celsius.");
+            Debug.Log("Press '2' to adapt fahrenheit value in Service to celsius.");
         }
 
         private void Update()

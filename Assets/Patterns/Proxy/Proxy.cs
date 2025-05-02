@@ -20,7 +20,7 @@ namespace Personal.Patterns.Proxy
         {
             if((_lastAccessTime != default) && (DateTime.Now - _lastAccessTime).Seconds <= 5)
             {
-                Debug.Log("Access restricted. Wait 5 seconds between each call.");
+                Debug.Log("Access to Service restricted. Wait 5 seconds between each call.");
                 return;
             }
 

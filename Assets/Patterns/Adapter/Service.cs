@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Personal.Patterns.Adapter
 {
-    public class ThirdPartyCode : MonoBehaviour
+    public class Service : MonoBehaviour
     {
         [SerializeField]
         private float _fahrenheit;

@@ -2,11 +2,11 @@ using UnityEngine;
 
 namespace Personal.Patterns.Facade
 {
-    public class ThirdPartyCode : MonoBehaviour
+    public class Service : MonoBehaviour
     {
         public void MethodA()
         {
-            Debug.Log("Called method A in third party code.");
+            Debug.Log("Called method A in Service.");
         }
 
         public void MethodB()

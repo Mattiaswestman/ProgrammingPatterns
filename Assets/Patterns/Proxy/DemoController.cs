@@ -13,7 +13,7 @@ namespace Personal.Patterns.Proxy
         {
             _proxy = new Proxy(_service);
 
-            Debug.Log("Press 'Return' to try and access service to print log.");
+            Debug.Log("Press 'Return' to try and access Service to print log.");
         }
 
         private void Update()
