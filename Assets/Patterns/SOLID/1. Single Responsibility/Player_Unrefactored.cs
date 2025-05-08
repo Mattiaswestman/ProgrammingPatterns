@@ -31,5 +31,4 @@ namespace Personal.Patterns.SOLID.SingleResponsibility
             _bounceSfx.Play();
         }
     }
-
 }

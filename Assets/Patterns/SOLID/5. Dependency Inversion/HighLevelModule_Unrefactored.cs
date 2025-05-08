@@ -5,13 +5,13 @@ namespace Personal.Patterns.SOLID.DependencyInversion
     // High level module depends on low level module, breaking the principle.
     public class HighLevelModule_Unrefactored : MonoBehaviour
     {
-        public LowLevelModule_Unrefactored LowLevelModule { get; set; }
+        private LowLevelModule_Unrefactored _lowLevelModule;
 
         public void PrintLog()
         {
-            if(LowLevelModule.ShouldPrintLog)
+            if(_lowLevelModule.ShouldPrintLog)
             {
-                LowLevelModule.PrintLog();
+                _lowLevelModule.PrintLog();
             }
         }
     }

@@ -19,6 +19,4 @@ namespace Personal.Patterns.SOLID.SingleResponsibility
             _playerMovement = GetComponent<PlayerMovement>();
         }
     }
-
-
 }
